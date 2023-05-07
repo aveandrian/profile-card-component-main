@@ -1,0 +1,132 @@
+* {
+    font-family: 'Kumbh Sans', sans-serif;
+    font-size: 1.125rem;
+}
+
+body {
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-repeat: no-repeat;
+    background-color: hsl(185, 75%, 39%);
+    
+}
+
+.bg-container {
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    position: absolute;
+    top: 0;
+    left: 0;
+    overflow: hidden;
+}
+.bg-top, .bg-bottom {
+    z-index: -1;
+    position: absolute;
+    overflow: hidden;
+    object-fit: cover;
+}
+
+.bg-top {
+    top: -70%;
+    left: -15%;
+}
+
+.bg-bottom {
+    bottom: -90%;
+    right: -13%;
+} 
+
+@media (max-width: 25rem) {
+    .bg-top {
+        top: -90%;
+        left: -200%;
+    }
+    
+    .bg-bottom {
+        bottom: -90%;
+        right: -200%;
+    } 
+}
+
+main {
+    width: fit-content;
+    border-radius: 0.625rem;
+    background-color: white;
+    margin-bottom: 1.25rem;
+}
+
+.header {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.card-bg {
+    border-radius: 0.625rem 0.625rem 0 0;
+}
+
+
+.profile-img {
+    position: absolute;
+    border-radius: 3.125rem;
+    border-style: solid;
+    border-color: white;
+    border-width: 0.313rem;
+}
+
+.name, .location {
+    margin:0;
+}
+
+.name {
+    margin-top: 4.375rem;
+    margin-bottom: 0.313rem;
+}
+
+.age {
+    font-weight: 400;
+    color: hsl(0, 0%, 59%);
+}
+
+.location {
+    margin-bottom: 1.25rem;
+    font-size: 0.925rem;
+    color: hsl(0, 0%, 59%);
+}
+
+.divider {
+    height: 0.063rem;
+    width: 100%;
+    background-color: hsl(0, 0%, 59%);
+}
+
+.stats {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 3.125rem;
+    padding-block: 1.25rem;
+}
+
+.stats--item {
+    text-align: center;
+}
+
+.stats--number {
+    font-weight: 700;
+    margin: 0;
+    margin-bottom: 0.313rem;
+}
+
+.stats--descr {
+    font-weight: 400;
+    margin: 0;
+    color: hsl(0, 0%, 59%);
+    font-size: 0.925rem;
+}
